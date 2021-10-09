@@ -1,0 +1,23 @@
+var coef=1
+                print("Enter number of rows: ")
+                if let rows=Int(readLine()!)
+                {
+                  for i in 0...rows-1
+                  {
+                    for j in 0...i
+                    {
+                      if(j==0 || i==0)
+                      {
+                        coef=1
+                      }
+                      else
+                      {
+                        coef=coef*(i-j+1)/j
+                      }
+                      print(coef, terminator:" ")
+                    }
+                    print()
+                  }
+                }
+                
+            
